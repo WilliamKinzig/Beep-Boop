@@ -21,20 +21,6 @@ function makeArray(x)
   return arrayOut;
 }
 
-// function checkResult(arrayIn)
-// {
-//   for(var index = 0; index < arrayIn.length; index += 1){
-//
-//
-//     var cond_0 = "Beep!"
-//     if (arrayIn[index] === 0){
-//       arrayIn = [];
-//       arrayIn.push(cond_0)
-//       return arrayIn;
-//     }
-//   }
-// }
-
 
 function checkResult(x)
 {
@@ -60,8 +46,10 @@ function checkResult(x)
 
   a = x.join("");
 
-  // for (var i=0; i<x.length; i++){
-  //
-  // }
-  return a;
+  var rangeArray = [];
+  for (var i=0; i<=a; i++){
+    rangeArray.push(i);
+  }
+
+  return rangeArray;
 }
