@@ -3,24 +3,18 @@ $(document).ready(function() {
     event.preventDefault();
 
     var numberToCheck = parseInt($("input#userNumberInput").val());
-
     var arrayFromNum = makeArray(numberToCheck);// send number to makeArray function
-
     var resultArray = checkResult(arrayFromNum);
-
-    //var resultToString = resultArray;
 
     $("#result").text(resultArray);// OUTPUT TO USER
   });
 });
-
 
 function makeArray(x)
 {
   arrayOut = x.toString().split('');
   return arrayOut;
 }
-
 
 function checkResult(x)
 {
@@ -45,11 +39,9 @@ function checkResult(x)
   }
 
   a = x.join("");
-
   var rangeArray = [];
   for (var i=0; i<=a; i++){
     rangeArray.push(i);
   }
-
   return rangeArray;
 }
