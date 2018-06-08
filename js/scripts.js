@@ -58,9 +58,10 @@ function checkResult(x)
     }
   }
 
-  a = [];
-  for (var i=0; i<x.length; i++){
-    
-  }
+  a = x.join("");
+
+  // for (var i=0; i<x.length; i++){
+  //
+  // }
   return a;
 }
