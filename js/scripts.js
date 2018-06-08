@@ -8,9 +8,11 @@ $(document).ready(function() {
 
     var arrayFromNum = makeArray(numberToCheck);// send number to makeArray function
 
-    var result = checkResult(arrayFromNum);
+    var resultArray = checkResult(arrayFromNum);
 
-    $("#result").text(result);// OUTPUT TO USER
+    var resultToString = resultArray.toString();
+
+    $("#result").text(resultToString);// OUTPUT TO USER
   });
 });
 
@@ -28,12 +30,28 @@ function makeArray(x)
   return arrayOut;
 }
 
-function checkResult(x)
+function checkResult(arrayIn)
 {
-  var count = 0;
-  for(var i=0; i<x.length; i++)
-  {
-    count += 1;
+  for(var index = 0; index < arrayIn.length; index += 1){
+
+    var cond_0 = "Beep!"
+    if (arrayIn[index] === 0){
+      arrayIn = [];
+      arrayIn.push(cond_0)
+      return arrayIn;
+    }
   }
-  return count;
 }
+
+
+
+// function checkResult(x)
+// {
+//   var count = 0;
+//   for(var i=0; i<x.length; i++)
+//   {
+//     if
+//     count += 1;
+//   }
+//   return count;
+// }
