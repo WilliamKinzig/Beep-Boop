@@ -18,8 +18,30 @@ _This web application takes a number from a user and returns a range of numbers 
 _{
   -Numbers that contain a 0 are replaced (all digits) with "Beep!"
   -Numbers that contain a 1 are replaced (all digits) with "Boop!"
-  -Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have.
+  -Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+
+  These exceptions are written from least to most important.
+  
+    - The first exception should apply unless the second exception does, same with the second and third.
+    - For example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   }_
+
+## Specs:
+_{
+  Behavior:
+  - Numbers that contain a 0 are replaced (all digits) with "Beep!"
+    - input: 1203
+    - output: Beep!
+
+    - Numbers that contain a 1 are replaced (all digits) with "Boop!"
+      - input: 1203
+      - output: Boop!
+
+    - Numbers divisible by 3 are replaced with: "I'm sorry, Dave. I'm afraid I can't do that."
+    - input: 1203
+    - output: "I'm sorry, Dave. I'm afraid I can't do that."
+  }_
+
 
 ## Setup/Installation Requirements
 
