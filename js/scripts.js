@@ -46,7 +46,7 @@ function checkResult(x)
       a = ["I'm sorry, Dave. I'm afraid I can't do that."];
       return a;
     }
-    
+
     if(x[i] == 1){
       a = ["Boop!"];
       return a;
@@ -57,5 +57,10 @@ function checkResult(x)
       return a;
     }
   }
-  return false;
+
+  a = [];
+  for (var i=0; i<x.length; i++){
+    
+  }
+  return a;
 }
