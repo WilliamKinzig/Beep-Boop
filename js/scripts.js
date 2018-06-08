@@ -30,5 +30,10 @@ function makeArray(x)
 
 function checkResult(x)
 {
-  return x;
+  var count = 0;
+  for(var i=0; i<x.length; i++)
+  {
+    count += 1;
+  }
+  return count;
 }
