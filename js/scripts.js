@@ -39,11 +39,22 @@ function makeArray(x)
 function checkResult(x)
 {
   var stringOutput = "";
+  var a = x;
   for(var i=0; i<x.length; i++)
   {
+    if(x[i] == 3){
+      a = ["I'm sorry, Dave. I'm afraid I can't do that."];
+      return a;
+    }
+    
+    if(x[i] == 1){
+      a = ["Boop!"];
+      return a;
+    }
+
     if(x[i] == 0){
-      stringOutput = "jfsalk;";
-      return stringOutput;
+      a = ["Beep!"];
+      return a;
     }
   }
   return false;
