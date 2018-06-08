@@ -21,7 +21,7 @@ _{
   -Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
 
   These exceptions are written from least to most important.
-  
+
     - The first exception should apply unless the second exception does, same with the second and third.
     - For example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   }_
@@ -45,24 +45,20 @@ _{
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _{ check to see you have all directories: css, js }_
+* _{ check to see you have all necessary files:  index.html; css/styles.css and bootstrap.css; js/scripts.js and jQuery-3.3.1.js; }_
+* _{ double click html file or drag it into your browser (Chrome) window }_
 
 ## Known Bugs
 
 _{
-  Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place.
+  - none
   }_
 
 ## Support and contact details
 
 _{
-  Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.
+  for support contact me billykinzig@gmail.com
   }_
 
 ## Technologies Used
