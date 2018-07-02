@@ -19,12 +19,12 @@ function makeArray(x)//make an array out of the user input number
 function checkResult(x)//compare specs
 {
   var a = x; // new array to play with and modify
+  var arrayToNumber = 0;
+  var imSorry = "I'm sorry, Dave. I'm afraid I can't do that.";
+
   for(var i=0; i<x.length; i++) // loop through input array
   {
-    if(x[i] == 3){//check for a 3
-      a = ["I'm sorry, Dave. I'm afraid I can't do that."];
-      return a;
-    }
+    arrayToNumber += x[i];
 
     if(x[i] == 1){//check for a 1
       a = ["Boop!"];
@@ -35,6 +35,11 @@ function checkResult(x)//compare specs
       a = ["Beep!"];
       return a;
     }
+  }
+
+  if (arrayToNumber % 3 == 0)
+  {
+    return imSorry;
   }
 
   a = x.join("");// join elements into a single number
